@@ -4,7 +4,7 @@ An application where users can create quotes and have those quotes voted on whet
 
 
 ## Live App
-> 
+> https://lorenah-mbogo.github.io/Quote-Cloud/
 # Author(s) information: 
 >Lorenah M.
 # Setup instructions:
