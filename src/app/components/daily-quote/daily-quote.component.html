@@ -1,0 +1,15 @@
+<div class="container">
+
+    <div class="jumbotron">
+        <div class="card  text-white bg-dark border-primary" >
+            <div class="card-header border-info"><a target="_top" href="https://flamingtext.com/" ><img src="https://blog.flamingtext.com/blog/2020/11/06/flamingtext_com_1604652011_823690859.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a>
+            </div>
+           <div *ngFor='let DailyQuote of DailyQuotes' >
+              <div *ngIf='DailyQuote.DayOfWeek == dayInString' class="card-body">
+                <h5 class="card-title">Today is : <span class="text-primary">{{DailyQuote.DayOfWeek}}</span></h5>
+                <p class="card-text">" <span class="text-warning">{{DailyQuote.DayQuote}}</span> " ❤️</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

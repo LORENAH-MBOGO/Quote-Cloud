@@ -1,0 +1,40 @@
+<app-write-quote (addQuote)="addNewQuote($event)"></app-write-quote>
+<div class="container">  
+
+    <div class="card bg-dark text-warning text-center p-3 quote_card border-success" *ngFor='let quote of quotes; let i = index'>
+      <blockquote class="blockquote mb-0">
+        <p>{{quote.quote}}</p>
+        <footer class="blockquote-footer text-white">
+          <small>
+            Author: <cite title="Source Title">{{quote.names}}</cite>
+          </small>
+        </footer>
+      </blockquote>
+  
+      <div class="row butoons">
+        <div class="col-4 ">
+          <button type="button" class="btn btn-secondary btn-lg delete_btn" (click)= 'quoteDelete(true)'>Delete</button>
+        </div>
+        <div class="col-8">
+          <!--app-vote></app-vote-->
+          <div class="vote_btns">
+            <div class="like_gp">
+                <button type="button" class="btn btn-warning btn-sm up_vote" (click)="likeButtonClick(i)">Like</button>
+                <span>{{quote.numberOfUpVotes}} </span>
+            </div>
+            <div class="dislike_gp">
+                <button type="button" class="btn btn-danger btn-sm down_vote" (click)="dislikeButtonClick(i)">Dislike</button>
+                <span> {{quote.numberOfDownVotes}} </span>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <p>{{quote.timing | dateAgo}}</p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
