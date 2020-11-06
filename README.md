@@ -1,10 +1,7 @@
-i
-# Quote App.
+# Quote Cloud.
 # Project description:
 An application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
 
-# App Screenshot.
-<img src="">
 
 ## Live App
 > 
