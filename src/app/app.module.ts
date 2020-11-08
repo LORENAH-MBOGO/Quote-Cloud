@@ -12,6 +12,7 @@ import { WriteQuoteComponent } from './components/write-quote/write-quote.compon
 import { QuoteComponent } from './components/quote/quote.component';
 import { VoteComponent } from './components/vote/vote.component';
 import { DateAgoPipe } from './pipes/date-ago.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -22,7 +23,8 @@ import { DateAgoPipe } from './pipes/date-ago.pipe';
     WriteQuoteComponent,
     QuoteComponent,
     VoteComponent,
-    DateAgoPipe
+    DateAgoPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
